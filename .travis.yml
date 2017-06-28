@@ -21,7 +21,7 @@ before_install:
   # for ocaml-qcow
   - brew install https://github.com/Homebrew/homebrew-core/raw/master/Formula/opam.rb
   - brew install https://github.com/Homebrew/homebrew-core/raw/master/Formula/libev.rb
-  - opam --version && opam init --yes && opam install --yes uri qcow-format ocamlfind conf-libev
+  - opam --version && opam init --yes && opam install uri qcow.0.10.0 qcow-tool mirage-block-unix.2.7.0 conf-libev logs fmt mirage-unix prometheus-app
   - eval `opam config env`
 
 install:
